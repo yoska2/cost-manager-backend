@@ -8,7 +8,7 @@
 
 ## 2) Configure Environment Variables
 
-Create a `.env` file in the project root and define:
+For local execution, create a `.env` file in the project root and define:
 
 - MONGODB_URI
 - PORT_USERS
@@ -17,11 +17,13 @@ Create a `.env` file in the project root and define:
 - PORT_ADMIN
 - TEAM_MEMBERS
 
+For the deployed services, the required environment variables are configured directly in Render.
+
 ## 3) Install Dependencies
 
 npm install
 
-## 4) Run the Services
+## 4) Run the Services Locally
 
 Open four terminals and run:
 
@@ -35,7 +37,7 @@ npm run start:admin
 
 ## 5) Run Demo Requests
 
-Open `demo.http` and run the HTTP requests.
+Open `demo.http` and run the HTTP requests against the deployed services.
 
 ## 6) Run Tests
 
