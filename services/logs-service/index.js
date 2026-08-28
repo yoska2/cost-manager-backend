@@ -1,0 +1,21 @@
+// services/logs-service/index.js
+require("dotenv").config();
+const { connectToMongo } = require("../../models/db");
+const { buildLogsApp } = require("./app");
+
+// Start the logs service and connect it to MongoDB
+async function main() {
+    await connectToMongo();
+
+    const app = buildLogsApp();
+    const port = Number(process.env.PORT || process.env.PORT_LOGS || 3003);
+
+    app.listen(port, () => {
+        console.log(`logs-service running on ${port}`);
+    });
+}
+
+main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+});
