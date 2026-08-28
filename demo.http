@@ -1,15 +1,15 @@
 ### About
-GET http://localhost:3004/api/about
+GET https://cost-manager-admin-6mct.onrender.com/api/about
 
 ###
 
 ### Add user
-POST http://localhost:3001/api/users
+POST https://cost-manager-users-xof7.onrender.com/api/add
 Content-Type: application/json
 
 {
   "id": 123123,
-  "first_name": "mosh",
+  "first_name": "moshi",
   "last_name": "israeli",
   "birthday": "2000-01-01"
 }
@@ -17,16 +17,16 @@ Content-Type: application/json
 ###
 
 ### List users
-GET http://localhost:3001/api/users
+GET https://cost-manager-users-xof7.onrender.com/api/users
 
 ###
 
 ### Add cost
-POST http://localhost:3002/api/add
+POST https://cost-manager-costs-birh.onrender.com/api/add
 Content-Type: application/json
 
 {
-  "description": "choco",
+  "description": "chocoa",
   "category": "food",
   "userid": 123123,
   "sum": 12
@@ -35,22 +35,22 @@ Content-Type: application/json
 ###
 
 ### Monthly report
-GET http://localhost:3002/api/report?id=123123&year=2025&month=12
+GET https://cost-manager-costs-birh.onrender.com/api/report?id=123123&year=2026&month=8
 
 ###
 
 ### User details with total
-GET http://localhost:3001/api/users/123123
+GET https://cost-manager-users-xof7.onrender.com/api/users/123123
 
 ###
 
 ### Get logs
-GET http://localhost:3003/api/logs
+GET https://cost-manager-logs-vl8y.onrender.com/api/logs
 
 ###
 
 ### Error example
-POST http://localhost:3002/api/add
+POST https://cost-manager-costs-birh.onrender.com/api/add
 Content-Type: application/json
 
 {
