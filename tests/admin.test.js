@@ -1,7 +1,8 @@
 // tests/admin.test.js
 const request = require("supertest");
 
-const ADMIN_BASE = "http://localhost:3004";
+// admin.test.js
+const ADMIN_BASE = "https://cost-manager-admin-6mct.onrender.com";
 
 describe("Admin service", () => {
 

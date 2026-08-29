@@ -1,7 +1,7 @@
 // tests/logs.test.js
 const request = require("supertest");
 
-const LOGS_BASE = "http://localhost:3003";
+const LOGS_BASE = "https://cost-manager-logs-vl8y.onrender.com";
 
 describe("Logs service", () => {
 

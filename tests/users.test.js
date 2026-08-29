@@ -1,7 +1,7 @@
 // tests/users.test.js
 const request = require("supertest");
 
-const USERS_BASE = "http://localhost:3001";
+const USERS_BASE = "https://cost-manager-users-xof7.onrender.com";
 
 describe("Users service", () => {
 

@@ -1,7 +1,7 @@
 // tests/costs.test.js
 const request = require("supertest");
 
-const COSTS_BASE = "http://localhost:3002";
+const COSTS_BASE = "https://cost-manager-costs-birh.onrender.com";
 
 describe("Costs service", () => {
 

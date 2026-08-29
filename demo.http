@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
   "id": 123123,
-  "first_name": "moshi",
+  "first_name": "mosh",
   "last_name": "israeli",
   "birthday": "2000-01-01"
 }
